@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap-grid.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+   .d-flex.flex-column.flex-md-row.align-items-center.p-3.px-md-4.mb-3
+    .container
+     .row
+      .navbar-header.my-0.mr-md-auto
+       .navbar-brand(href="/") 
+        img(src="/images/logo.svg" width="100")
+      .my-2.my-md-0.mr-md-3
+       ul.main-nav.nav.justify-content-end
+        li.nav-item
+         a(href='/') Home
+        li.nav-item
+         a(href='/about/') About
+        li.nav-item
+         a(href='/locations/') Locations
+        li.nav-item 
+         a(href='/about/') Next
+        li.nav-item 
+         a(href='/about/') Next   
+
+   .container
+    block content
+
+   #footer
+    .container
+     .row
+      .col-xs-12
+       small &copy; Footer is here in 2018
+
+    script(src='/javascripts/jquery-3.3.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
