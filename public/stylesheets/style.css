@@ -71,18 +71,22 @@ a {
 li.small {
 	height:330px;
 	width:330px;
+	font-size:12px;
 }
 li.medium {
 	height:400px;
-	width:400px;	
+	width:400px;
+	font-size:12px;	
 }
 li.regular {
 	height:480px;
 	width:480px;	
+	font-size:12px;
 }
 li.large {
 	height:530px;
 	width:530px;
+	font-size:12px;
 }
 
 .title {
