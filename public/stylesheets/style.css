@@ -1,6 +1,7 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size:14px;
 }
 a {
   color: yellow;
@@ -32,6 +33,52 @@ a {
 .item-card img {
 	padding:10px;
 }
+.grid {
+	column-count: 1;
+    column-gap: 0;
+    counter-reset: item-counter;
+
+  @media screen and (min-width: 400px) {
+    column-count: 2;
+  }
+  
+  @media screen and (min-width: 600px) {
+    column-count: 3;
+  }
+  
+  @media screen and (min-width: 800px) {
+    column-count: 4;
+  }
+  
+  @media screen and (min-width: 1100px) {
+    column-count: 5;
+  }
+}
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+li.small {
+	height:200px;
+	width:200px;
+}
+li.medium {
+	height:300px;
+	width:300px;	
+}
+li.medium {
+	height:400px;
+	width:400px;	
+}
+li.large {
+	height:500px;
+	width:500px;
+}
+
 #footer {
 	width:100%;
 	padding:20px 20px;

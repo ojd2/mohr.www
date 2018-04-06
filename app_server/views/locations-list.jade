@@ -8,8 +8,8 @@ block content
 
  .second-listing
   .row
-   .col-xs-12.col-sm-8
-    each location in locations
-     ul#home-gallery-images
-      +image(location.name, location.distance, location.address, location.image)
+   .grid.col-xs-12.col-sm-12.col-lg.16
+    ul#home-gallery-images.col-lg-16
+     each location in locations
+      +image(location.name, location.distance, location.rating, location.address, location.image, location.size)
       
