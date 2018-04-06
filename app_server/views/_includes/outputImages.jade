@@ -4,31 +4,31 @@ mixin image(title, distance, rating, address, src, size)
   li.item.small  
    img(src= "#{src}").img-fluid.small
    div.item_details
-    p= title
-    p= distance
-    p= rating
-    p= address
+    p.title= title
+    p.distance= "Distance: " + distance
+    p.rating= "Rating: " + rating
+    p.address= "Address: " + address
  else if (size === 'medium')
   li.item.medium
    img(src= "#{src}").img-fluid.medium
    div.item_details 
-    p= title
-    p= distance
-    p= rating
-    p= address
+    p.title= title
+    p.distance= "Distance: " + distance
+    p.rating= "Rating: " + rating
+    p.address= "Address: " + address
  else if (size === 'regular')
   li.item.regular
    img(src= "#{src}").img-fluid.regular
    div.item_details 
-    p= title
-    p= distance
-    p= rating
-    p= address
+    p.title= title
+    p.distance= "Distance: " + distance
+    p.rating= "Rating: " + rating
+    p.address= "Address: " + address
  else if (size === 'large')
   li.item.large
    img(src= "#{src}").img-fluid.large
    div.item_details 
-    p= title
-    p= distance
-    p= rating
-    p= address
+    p.title= title
+    p.distance= "Distance: " + distance
+    p.rating= "Rating: " + rating
+    p.address= "Address: " + address

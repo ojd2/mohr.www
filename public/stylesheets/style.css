@@ -37,6 +37,7 @@ a {
 	column-count: 1;
     column-gap: 0;
     counter-reset: item-counter;
+    text-align: center;
 
   @media screen and (min-width: 400px) {
     column-count: 2;
@@ -61,23 +62,33 @@ a {
     margin: 0 0 1.5em;
     width: 100%;
     box-sizing: border-box;
+    text-align: left;
+}
+.item-details p {
+	font-size:14px;
+	margin-bottom:0px !important;
 }
 li.small {
-	height:200px;
-	width:200px;
-}
-li.medium {
-	height:300px;
-	width:300px;	
+	height:330px;
+	width:330px;
 }
 li.medium {
 	height:400px;
 	width:400px;	
 }
-li.large {
-	height:500px;
-	width:500px;
+li.regular {
+	height:480px;
+	width:480px;	
 }
+li.large {
+	height:530px;
+	width:530px;
+}
+
+.title {
+	font-size:18px;
+}
+
 
 #footer {
 	width:100%;
