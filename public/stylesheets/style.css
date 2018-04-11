@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size:14px;
 }
 a {
@@ -17,10 +17,15 @@ a {
 }
 .main-nav li {
 	padding:0px 20px;
+	line-height: 1.5;
 }
 .main-nav li a {
     text-decoration: none;
     color:black;
+    font-size: 16px;
+}
+.main-nav li a:hover {
+	border-bottom:2px solid black;
 }
 #home-gallery-images li {
 	list-style: none;
@@ -88,12 +93,9 @@ li.large {
 	width:530px;
 	font-size:12px;
 }
-
 .title {
 	font-size:18px;
 }
-
-
 #footer {
 	width:100%;
 	padding:20px 20px;
@@ -101,4 +103,13 @@ li.large {
 	display: block;
 	position: relative;
 	float:left;
+}
+#footer p {
+	font-size:13px;
+	text-align: left;
+	font-style: italic;
+}
+
+#footer .main-nav li a {
+	font-size:14px;
 }

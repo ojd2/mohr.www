@@ -23,9 +23,9 @@ var ctrlOthers = require('../controllers/others');
 // First GET Homepage: 
 router.get('/', ctrlLocations.homelist);
 // Get Location:
-router.get('/locations', ctrlLocations.locationInfo);
-// Get Review:
-router.get('/location/review/new', ctrlLocations.addReview);
+router.get('/index', ctrlLocations.index);
+router.get('/information', ctrlLocations.information);
+
 
 /* Other pages */
 

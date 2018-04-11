@@ -5,26 +5,32 @@ html
     link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
     link(rel='stylesheet', href='/bootstrap/css/bootstrap-grid.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed') 
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Arimo:400,700') 
   body
-   .d-flex.flex-column.flex-md-row.align-items-center.p-3.px-md-4.mb-3
+   .d-flex.flex-column.flex-md-row.align-items-center.p-3.px-md-4.mb-3.sticky-top
     .container
      .row
-      .navbar-header.my-0.mr-md-auto
+      .navbar-header.my-0.mr-md-auto.col-lg-2.col-sm-4.col-xs-12
        .navbar-brand(href="/") 
-        img(src="/images/logo.svg" width="100")
-      .my-2.my-md-0.mr-md-3
+        a(href='/')
+         img(src="/images/logo.svg" width="100")
+      .col-lg-6.col-sm-6.col-xs-12
        ul.main-nav.nav.justify-content-end
         li.nav-item
-         a(href='/') Home
+         a(href='/index') Index
+        li.nav-item
+         a(href='/information') Information
+      .col-lg-4.col-sm-6.col-xs-12
+       ul.main-nav.nav.justify-content-end
+        li.nav-item
+         a(href='/plus') Plus
         li.nav-item
          a(href='/about/') About
-        li.nav-item
-         a(href='/locations/') Locations
-        li.nav-item 
-         a(href='/about/') Next
-        li.nav-item 
-         a(href='/about/') Next   
+        li.nav-item.index
+         a(href='/locations/')
+          ЁЄЖ
+
+        
 
    .container
     block content
@@ -32,8 +38,19 @@ html
    #footer
     .container
      .row
-      .col-xs-12
-       small &copy; Footer is here in 2018
+      .col-lg-4.col-sm-4.col-xs-12
+       p Manfred Mohr is considered a pioneer of digital art based on algorithms. Within a few years, his art transformed from abstract expressionism to computer generated algorithmic geometry.
+      .col-lg-4.col-sm-4.col-xs-12
+       ul.main-nav.nav.justify-content-end
+        li.nav-item
+         a(href='/') Instagram
+        li.nav-item
+         a(href='/') Twitter
+      .col-lg-4.col-sm-4.col-xs-12
+       ul.main-nav.nav.justify-content-end
+        li.nav-item
+         a(href='/') Blog
+
 
     script(src='/javascripts/jquery-3.3.1.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')

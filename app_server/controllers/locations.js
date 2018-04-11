@@ -109,49 +109,18 @@ module.exports.homelist = function(req, res){
 };
 
 
-/*module.exports.locationInfo = function(req, res) {
-res.render('locations-list', {
-	location: {
-	  name: 'Gallery Uno',
-	  address: '125 High Street, London, RG6 1PS',
-	  rating: 4,
-	  facilities: ['Cafe', 'Food', 'Art'],
-	  coords: {lat: 22.4521141, lng: -2.9690884},
-	  openingTimes: [{
-	    days: 'Monday - Friday',
-	    opening: '7:00am',
-	    closing: '10:00pm',
-	    closed: false
-	  },{
-	    days: 'Saturday',
-	    opening: '8:00am',
-	    closing: '5:00pm',
-	    closed: false
-	  },{
-	    days: 'Sunday',
-	    closed: true
-	  }],
-	  reviews: [{
-	    author: 'Mr Barry',
-	    rating: 5,
-	    timestamp: '21 August 2016',
-	    reviewText: 'What a great place. I can\'t say enough good things about it.'
-	  },{
-	    author: 'Mr Gandalf',
-	    rating: 3,
-	    timestamp: '26 June 2012',
-	    reviewText: 'It was okay. Coffee wasn\'t great, but the wifi was fast.'
-	  }]
-	}
-});
+
+
+
+
+
+/* GET 'Index' page */
+module.exports.index = function(req, res){
+  res.render('index', { title: 'index' });
 };
-*/
-
-
-
-/* GET 'Location info' page */
-module.exports.locationInfo = function(req, res){
-  res.render('locations-info', { title: 'Locations info' });
+/* GET 'Information' page */
+module.exports.information = function(req, res){
+  res.render('information', { title: 'information' });
 };
 
 /* GET 'Add review' page */
